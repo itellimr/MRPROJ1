@@ -1,0 +1,17 @@
+ID: MRApp1
+_schema-version: '2.1'
+version: 0.0.1
+modules:
+  - name: MRdb
+    type: hdb
+    path: db
+    requires:
+      - name: MRhdi_db
+resources:
+  - name: MRhdi_db
+    parameters:
+      config:
+        schema: MRSchema1
+    properties:
+      hdi-container-name: '${service-name}'
+    type: com.sap.xs.hdi-container

@@ -1,0 +1,11 @@
+namespace MRNamespace.Tables;
+
+context PersistedTables {
+
+    /*@@layout{"layoutInfo":{"x":-352,"y":-76.5}}*/
+    entity PersistedTable1 {
+        elem_1 : String(10);
+        elem_2 : String(10);
+        elem_3 : String(10);
+    };
+};
